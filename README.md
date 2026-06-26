@@ -35,6 +35,17 @@ wmspython/
   environment variables (or a local `.env`).
 - **Tested parsing logic** — see `tests/`.
 
+## Codebase Intelligence — Lineage Explorer
+
+The codebase-audit suite parses every stored procedure to map SP→SP calls and
+SP→table reads/writes, then renders a self-contained HTML explorer. Click any
+procedure or table to see its callers, callees, and the tables it touches.
+
+![Lineage Explorer](docs/lineage_explorer.png)
+
+> Screenshot rendered from **synthetic sample data** (generic object names), not
+> production content.
+
 ## Setup
 
 ```bash
